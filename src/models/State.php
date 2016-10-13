@@ -14,4 +14,9 @@ class State extends Model
   {
     return $this->hasMany(LocalGovt::class, 'state_id');
   }
+
+  public static function findByName($name)
+  {
+    return Self::where('name', $name)->first();
+  }
 }

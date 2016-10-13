@@ -14,8 +14,8 @@ class AddLocalGovtTable extends Migration
     {
         Schema::create('local_govt', function (Blueprint $table)
         {
-            $table->integer('local_id')->unsigned();
-            $table->primary('local_id');
+            $table->integer('id')->unsigned();
+            $table->primary('id');
             $table->integer('state_id')->unsigned();
             $table->foreign('state_id')->references('id')->on('states');
             $table->string('local_name');

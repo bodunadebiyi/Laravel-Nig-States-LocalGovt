@@ -101,7 +101,7 @@ class SlgTableSeeder extends Seeder
 
     private function getLGQuery()
     {
-      return "INSERT INTO local_govt (local_id, state_id, local_name) VALUES
+      return "INSERT INTO local_govt (id, state_id, local_name) VALUES
         (1, 1, 'Aba South'),
         (2, 1, 'Arochukwu'),
         (3, 1, 'Bende'),
