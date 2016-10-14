@@ -11,6 +11,8 @@ A Laravel Package that populates your database with all the states in the Nigeri
 
 ## Usage
 - Import models into your controllers
+
+
 **Note: If your root namespace in your application isn't `app` make sure you go to the models and modify the namespace**
 
 ```php
