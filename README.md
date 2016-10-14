@@ -6,10 +6,13 @@ A Laravel Package that populates your database with all the states in the Nigeri
 - Add `Bodunde\SLG\SLGServiceProvider::class` to provider in `app.php` under `config` directory
 - Publish package resources by running `php artisan vendor:publish`. Running this command would publish models, migrations and seeders.
 - Run published migrations `php artisan migrate`
+- Regenerate your autoload files `composer dump-autoload`
 - Run published database seeders `php artisan db:seed --class=SlgTableSeeder`
 
 ## Usage
 - Import models into your controllers
+**Note: If your root namespace in your application isn't `app` make sure you go to the models and modify the namespace**
+
 ```php
 ...
 use App\State;
