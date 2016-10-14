@@ -1,6 +1,7 @@
 {
     "name": "bodunde/states-and-local-govt",
     "description": "Populates your DB with all the states in Nigeria and their local governments. It also creates the models for you",
+    "license": "MIT",
     "authors": [
         {
             "name": "Adebiyi Bodunde",
